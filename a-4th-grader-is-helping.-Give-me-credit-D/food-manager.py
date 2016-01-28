@@ -8,9 +8,11 @@ while 21:
     
     if len(foodinput) > 0 and foodinput.isalpha():
         if foodinput == "apple":
-            Calculator("apple", 1, fruit, 30, 300)
+            Calculator("apple", 1, " fruit", 0.3, 95)
+        elif foodinput == "guava":
+            Calculator("guava", 1, " fruit", 38, 450)
         elif foodinput == "pear":
-            Calculator("pear", 2, fruit, 35, 450)
+            Calculator("pear", 1, " fruit", 35, 450)
         else:
             print "Can't recognize."
     
