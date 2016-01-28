@@ -5,7 +5,8 @@ while 21:
     foodinput = foodinput.lower()
     def Calculator(name, sving_size, fat, calories):
         print "It is " + name + " Serving = " + str(sving_size) + "g" + " Fat = " + str(fat) + " Calories = " + str(calories)
-    Calculator("apple", 1, 30, 300)
+    if foodinput == "apple":
+        Calculator("apple", 1, 30, 300)
         
 
     if len(foodinput) == 0:
