@@ -4,7 +4,7 @@ while 21:
     foodinput = raw_input("What is the food: ")
     foodinput = foodinput.lower()
     def Calculator(name, sving_size, sving_size_unit, fat, calories):
-        print "It is a(n) " + name + " with " + str(sving_size) + str(sving_size_unit) + " as the serving size and " + str(fat) + "g" + " of fat and with " + str(calories) + " calories."
+        print "It is a(n) " + name + " with " + str(sving_size) + str(sving_size_unit) + " as the serving size, " + str(calories) + " calories, and " + str(fat) + "g of total fat."
     
     if len(foodinput) > 0 and foodinput.isalpha():
         if foodinput == "apple":
