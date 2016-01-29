@@ -13,6 +13,8 @@ while 21:
             Calculator("guava", 1, " fruit", 38, 450)
         elif foodinput == "pear":
             Calculator("pear", 1, " fruit", 35, 450)
+        elif foodinput == "cheetos":
+            Calculator("cheetos", 1, "oz (28g/about 21 pieces)", 10, 150) 
         else:
             print "Can't recognize."
     
