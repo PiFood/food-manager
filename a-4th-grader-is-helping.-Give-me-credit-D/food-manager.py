@@ -20,6 +20,8 @@ while 21:
         elif foodinput == "cheetos puffs":
             Calculator("cheetos puffs", 1, " oz (28g/about 21 pieces)", 10, 150)
         #Lay's
+        elif foodinput == "lays barbecue":
+            Calculator("lays barbecue", 1, " oz (28g/about 15 pieces)", 10, 160)
         elif foodinput == "lays classic":
             Calculator("lays classic", 1, " oz (28g/about 15 pieces)", 10, 160)
         else:
