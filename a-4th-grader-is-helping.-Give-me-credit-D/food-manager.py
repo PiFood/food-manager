@@ -16,6 +16,8 @@ while 21:
         #cheetos
         elif foodinput == "cheetos":
             Calculator("cheetos", 1, " oz (28g/about 21 pieces)", 10, 150)
+        elif foodinput == "cheetos puffs":
+            Calculator("cheetos puffs", 1, " oz (28g/about 21 pieces)", 10, 150)
         else:
             print "Can't recognize."
     
