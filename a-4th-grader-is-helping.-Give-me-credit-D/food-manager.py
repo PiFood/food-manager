@@ -7,24 +7,26 @@ while 21:
         print "It is a(n) " + name + " with " + str(sving_size) + " " + str(sving_size_unit) + " as the serving size, " + str(calories) + " calories, and " + str(total_fat) + "g of total fat."
         print "This includes " + str(sat_fat) + "g of saturated fat and " + str(trans_fat) + "g of trans fat."
     
-    if len(foodinput) > 0 and foodinput.isalpha():
+    if len(foodinput) > 0:
+        
     #FritoLay        
         #Cheetos
         if foodinput == "cheetos crunchy":
-                Calculator("cheetos crunchy", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
+                Calculator("Cheetos Crunchy", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
         elif foodinput == "cheetos puffs":
-                Calculator("cheetos puffs", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
+                Calculator("Cheetos Puffs", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
         #Doritos
-        elif foodinput == "doritos nacho cheese":
-                Calculator("doritos nacho cheese", 1, "oz (28g/about 11 pieces)", 140, 8, 1, 0)
         elif foodinput == "doritos cool ranch":
-                Calculator("doritos cool ranch", 1, "oz (28g/about 11 pieces)", 150, 8, 1, 0)
+                Calculator("Doritos Cool Ranch", 1, "oz (28g/about 11 pieces)", 150, 8, 1, 0)
+        elif foodinput == "doritos nacho cheese":
+                Calculator("Doritos Nacho Cheese", 1, "oz (28g/about 11 pieces)", 140, 8, 1, 0)
         #Lay's
         elif foodinput == "lays barbecue":
-                Calculator("lays barbecue", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
+                Calculator("Lay's Barbecue", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
         elif foodinput == "lays classic":
-                Calculator("lays classic", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
-    #General Fruits    
+                Calculator("Lay's Classic", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
+    
+    #gen_Fruits    
         elif foodinput == "apple":
                 Calculator("apple", 1, "fruit", 95, 0.3, 0.1, 0)
         elif foodinput == "guava":
