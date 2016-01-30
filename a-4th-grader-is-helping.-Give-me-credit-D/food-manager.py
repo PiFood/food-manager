@@ -7,23 +7,30 @@ while 21:
         print "It is a(n) " + name + " with " + str(sving_size) + str(sving_size_unit) + " as the serving size, " + str(calories) + " calories, and " + str(fat) + "g of total fat."
     
     if len(foodinput) > 0 and foodinput.isalpha():
-        if foodinput == "apple":
-            Calculator("apple", 1, " fruit", 0.3, 95)
-        elif foodinput == "guava":
-            Calculator("guava", 1, " fruit", 38, 450)
-        elif foodinput == "pear":
-            Calculator("pear", 1, " fruit", 35, 450)
-    #FRITOLAY        
+        
+    #FritoLay        
         #Cheetos
-        elif foodinput == "cheetos":
-            Calculator("cheetos", 1, " oz (28g/about 21 pieces)", 10, 150)
-        elif foodinput == "cheetos puffs":
-            Calculator("cheetos puffs", 1, " oz (28g/about 21 pieces)", 10, 150)
+            elif foodinput == "cheetos":
+                Calculator("cheetos", 1, " oz (28g/about 21 pieces)", 10, 150)
+            elif foodinput == "cheetos puffs":
+                Calculator("cheetos puffs", 1, " oz (28g/about 21 pieces)", 10, 150)
+        #Doritos
+            elif foodinput == "doritos nacho cheese":
+                Calculator("doritos nacho cheese", 1, " oz (28g/about 11 pieces)", 8, 140)
+            elif foodinput == "doritos cool ranch":
+                Calculator("doritos cool ranch", 1, " oz (28g/about 11 pieces)", 8, 150)
         #Lay's
-        elif foodinput == "lays barbecue":
-            Calculator("lays barbecue", 1, " oz (28g/about 15 pieces)", 10, 160)
-        elif foodinput == "lays classic":
-            Calculator("lays classic", 1, " oz (28g/about 15 pieces)", 10, 160)
+            elif foodinput == "lays barbecue":
+                Calculator("lays barbecue", 1, " oz (28g/about 15 pieces)", 10, 160)
+            elif foodinput == "lays classic":
+                Calculator("lays classic", 1, " oz (28g/about 15 pieces)", 10, 160)
+    #General Fruits    
+            if foodinput == "apple":
+                Calculator("apple", 1, " fruit", 0.3, 95)
+            elif foodinput == "guava":
+                Calculator("guava", 1, " fruit", 38, 450)
+            elif foodinput == "pear":
+                Calculator("pear", 1, " fruit", 35, 450)
         else:
             print "Can't recognize."
     
