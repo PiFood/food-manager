@@ -33,12 +33,13 @@ while 21:
                 Calculator("guava", 1, "fruit", 38, 0.5, 0.1, 0)
         elif foodinput == "pear":
                 Calculator("pear", 1, "fruit", 102, 0.2, 0, 0)
-        else:
-            print "Can't recognize."
             
     #gen_Vegetables    
-        elif foodinput == "broccoli:
+        elif foodinput == "broccoli":
                 Calculator("broccoli", 1, "NLEA serving", 50, 0.5, 0.1, 0)
+                
+        else:
+            print "Can't recognize."
     
     else:
         print "Empty. Please enter a food."
