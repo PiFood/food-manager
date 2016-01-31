@@ -11,7 +11,7 @@ while 21:
         
     #FritoLay        
         #Cheetos
-        if foodinput == "cheetos crunchy":
+        if foodinput == "cheetos crunchy" or "cheetos":
                 Calculator("Cheetos Crunchy", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
         elif foodinput == "cheetos puffs":
                 Calculator("Cheetos Puffs", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
@@ -21,9 +21,9 @@ while 21:
         elif foodinput == "doritos nacho cheese":
                 Calculator("Doritos Nacho Cheese", 1, "oz (28g/about 11 pieces)", 140, 8, 1, 0)
         #Lay's
-        elif foodinput == "lays barbecue":
+        elif foodinput == "lays barbecue" or "lay's barbecue":
                 Calculator("Lay's Barbecue", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
-        elif foodinput == "lays classic":
+        elif foodinput == "lays classic" or "lay's classic":
                 Calculator("Lay's Classic", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
     
     #gen_Fruits    
