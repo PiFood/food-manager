@@ -46,7 +46,8 @@ def search():
         #Nature Nate's   
         elif foodinput == "nature nates honey" or foodinput == "03877883044":
             Calculator("HHOONNEEYY", 1, "tbsp", 60, 0, 0, 0)
-                    
+        elif foodinput == "aveeno" or foodinput == "381371151035":
+            print "Aveeno. THIS IS NOT EDIBLE."
         else:
             print "Can't recognize."
         
@@ -65,7 +66,7 @@ def scanner():
     proc.parse_config('enable')
     
     # initialize the Processor
-    device = '/dev/video1'
+    device = '/dev/video0'
     if len(argv) > 1:
         device = argv[1]
     proc.init(device)
@@ -76,8 +77,9 @@ def scanner():
         for symbol in image.symbols:
             # do something useful with results
             print 'decoded', symbol.type, 'symbol', '"%s"' % symbol.data
-            if symbol.data == "381371151035":
-                foodinput = "aveeno"
+            foodinput = symbol.data
+#            if symbol.data == "381371151035":
+#               foodinput = "aveeno"
                 
     proc.set_data_handler(my_handler)
     
