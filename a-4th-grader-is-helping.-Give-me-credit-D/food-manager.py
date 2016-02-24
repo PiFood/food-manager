@@ -6,6 +6,7 @@ from sys import argv, exit
 import zbar
 
 global foodinput
+foodinput = ""
 
 def search():
     def Calculator(name, sving_size, sving_size_unit, calories, total_fat, sat_fat, trans_fat):
@@ -47,12 +48,14 @@ def search():
         elif foodinput == "nature nates honey" or foodinput == "03877883044":
             Calculator("HHOONNEEYY", 1, "tbsp", 60, 0, 0, 0)
         elif foodinput == "aveeno" or foodinput == "381371151035":
-            print "Aveeno. THIS IS NOT EDIBLE."
+-            print "Aveeno. THIS IS NOT EDIBLE."
         else:
             print "Can't recognize."
         
     else:
         print "Empty. Please enter a food."
+def admin():
+        print "asdf"
 def enter():
     global foodinput
     foodinput = raw_input("What is the food? ")
@@ -76,10 +79,10 @@ def scanner():
         # extract results
         for symbol in image.symbols:
             # do something useful with results
-            print 'decoded', symbol.type, 'symbol', '"%s"' % symbol.data
+            print 'decoded', symbol.type, 'symbol', '"%s"' % symbol.data 
             foodinput = symbol.data
 #            if symbol.data == "381371151035":
-#               foodinput = "aveeno"
+#                foodinput = "aveeno"
                 
     proc.set_data_handler(my_handler)
     
@@ -102,7 +105,13 @@ while 1:
         scanner()
     elif thingInput == 'i':
         enter()
+    elif thingInput == "pink fluffy firebreathing unicornz":
+        vadmin = True
+        print "you are admin."
+        admin()
     elif thingInput == 'q':
+        print "You have pressed 'q'."
+        time.sleep(1)
         exit()
     else:
         print "Enter a valid letter"
