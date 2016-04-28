@@ -40,11 +40,11 @@ def search():
         elif foodinput == "pear":
                 Calculator("pear", 1, "fruit", 102, 0.2, 0, 0)
                 
-        #gen_Vegetables    
+    #gen_Vegetables    
         elif foodinput == "broccoli":
             Calculator("broccoli", 1, "NLEA serving", 50, 0.5, 0.1, 0)
 
-        #Nature Nate's   
+    #Nature Nate's   
         elif foodinput == "nature nates honey" or foodinput == "03877883044":
             Calculator("HHOONNEEYY", 1, "tbsp", 60, 0, 0, 0)
         elif foodinput == "aveeno" or foodinput == "381371151035":
@@ -105,9 +105,9 @@ while 1:
         scanner()
     elif thingInput == 'i':
         enter()
-    elif thingInput == "pink fluffy firebreathing unicornz":
+    elif thingInput == "pink fluffy fire breathing unicornz":
         vadmin = True
-        print "you are admin."
+        print "You are admin."
         admin()
     elif thingInput == 'q':
         print "You have pressed 'q'."
