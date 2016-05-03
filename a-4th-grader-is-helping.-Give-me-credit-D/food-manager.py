@@ -63,7 +63,7 @@ def search():
     else:
         print "Empty. Please enter a food."
 def admin():
-        print "asdf"
+        print "I'm watching you."
 def enter():
     global foodinput
     foodinput = raw_input("What is the food? ")
@@ -113,10 +113,16 @@ while 1:
         scanner()
     elif thingInput == 'i':
         enter()
+        
     elif thingInput == "pink fluffy fire breathing unicornz":
         vadmin = True
-        print "You are admin."
+        print "You are admin Eric."
         admin()
+    elif thingInput == "secret passcode is secret":
+        vadmin = True
+        print "You are admin Ethan."
+        admin()
+        
     elif thingInput == 'q':
         print "You have pressed 'q'."
         time.sleep(1)
