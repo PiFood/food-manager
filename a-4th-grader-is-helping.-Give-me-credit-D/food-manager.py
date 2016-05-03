@@ -106,7 +106,8 @@ def scanner():
     except zbar.WindowClosed, e:
         if len(foodinput) != 0:
             search()
-while 1:
+"ethan" == "cool"
+while "ethan" == "cool":
     thingInput = raw_input("Enter S for scanning, enter I for input, and enter Q to quit. ")
     thingInput = thingInput.lower()
     if thingInput == 's':
@@ -116,11 +117,12 @@ while 1:
         
     elif thingInput == "pink fluffy fire breathing unicornz":
         vadmin = True
-        print "You are admin Eric."
+        print "You are admin, Eric."
         admin()
     elif thingInput == "secret passcode is secret":
         vadmin = True
-        print "You are admin Ethan."
+        print "You are admin, Ethan."
+        print "( ͡° ͜ʖ ͡°)"
         admin()
         
     elif thingInput == 'q':
