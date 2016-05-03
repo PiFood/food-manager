@@ -9,8 +9,11 @@ global foodinput
 foodinput = ""
 
 def search():
-    def Calculator(name, sving_size, sving_size_unit, calories, total_fat, sat_fat, trans_fat):
-        print "It is a(n) " + name + " with " + str(sving_size) + " " + str(sving_size_unit) + " as the serving size, " + str(calories) + " calories, and " + str(total_fat) + "g of total fat."
+    def Calculator(name, sving_size_unit, sving_size, calories, total_fat, sat_fat, trans_fat):
+        print "It is a(n) " + name + "."
+        print "The serving size is " + str(sving_size_unit) + " " + str(sving_size) + "."
+        print "It has " + str(calories) + " calories."
+        print "It has " + str(total_fat) + " g of total fat."
         print "This includes " + str(sat_fat) + "g of saturated fat and " + str(trans_fat) + "g of trans fat."
         
     if len(foodinput) > 0:
@@ -26,6 +29,10 @@ def search():
             Calculator("Doritos Cool Ranch", 1, "oz (28g/about 11 pieces)", 150, 8, 1, 0)
         elif foodinput == "doritos nacho cheese":
             Calculator("Doritos Nacho Cheese", 1, "oz (28g/about 11 pieces)", 140, 8, 1, 0)
+            
+    #Easter Eggs
+        elif foodinput == "mlg combo":
+            Calculator("ONE DOTHS NAWT GO THIS FAR", 360, "swag", "morethanu", "3sketchy5u", "dealwithit", 720)
     #Lay's
         elif foodinput == "lays barbecue":
                 Calculator("Lay's Barbecue", 1, "oz (28g/about 15 pieces)", 160, 10, 1.5, 0)
@@ -47,8 +54,9 @@ def search():
     #Nature Nate's   
         elif foodinput == "nature nates honey" or foodinput == "03877883044":
             Calculator("HHOONNEEYY", 1, "tbsp", 60, 0, 0, 0)
-        elif foodinput == "aveeno" or foodinput == "381371151035":
--            print "Aveeno. THIS IS NOT EDIBLE."
+    #Pepsico
+        elif foodinput == "mountain dew":
+            Calculator("Mountain Dew", 1, "container", 170, 0, 0, 0,)
         else:
             print "Can't recognize."
         
