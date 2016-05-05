@@ -118,6 +118,7 @@ while "ethan" == "cool":
     elif thingInput == "pink fluffy fire breathing unicornz":
         vadmin = True
         print "You are admin, Eric."
+        print "ಠ‿ಠ"
         admin()
     elif thingInput == "secret passcode is secret":
         vadmin = True
