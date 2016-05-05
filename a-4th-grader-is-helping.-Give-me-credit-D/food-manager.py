@@ -1,6 +1,6 @@
 import pickle
 import time
-
+import pygame
 #!/usr/bin/python
 from sys import argv, exit
 import zbar
@@ -20,14 +20,14 @@ def search():
             
 #FritoLay        
     #Cheetos
-        if foodinput == "cheetos crunchy":
+        if foodinput == "cheetos crunchy" or foodinput == "cheetos":
             Calculator("Cheetos Crunchy", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
         elif foodinput == "cheetos puffs":
             Calculator("Cheetos Puffs", 1, "oz (28g/about 21 pieces)", 150, 10, 1.5, 0)
     #Doritos
         elif foodinput == "doritos cool ranch":
             Calculator("Doritos Cool Ranch", 1, "oz (28g/about 11 pieces)", 150, 8, 1, 0)
-        elif foodinput == "doritos nacho cheese":
+        elif foodinput == "doritos nacho cheese" or foodinput == "doritos":
             Calculator("Doritos Nacho Cheese", 1, "oz (28g/about 11 pieces)", 140, 8, 1, 0)
             
     #Easter Eggs
