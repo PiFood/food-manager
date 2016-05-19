@@ -25,7 +25,7 @@ def search():
             
 #FritoLay        
     #Cheetos
-        if foodinput == "cheetos crunchy":
+        if foodinput == "cheetos crunchy" or foodinput == "cheetos":
             Calculator("cheetos crunchy", 1, "oz (28g or about 21 pieces)", 150, 10, 1.5, 0)
         elif foodinput == "cheetos puffs":
             Calculator("cheetos puffs", 1, "oz (28g or about 21 pieces)", 150, 10, 1.5, 0)
@@ -55,7 +55,9 @@ def search():
         #Nature Nate's
         elif foodinput == "nature nates honey" or foodinput == "03877883044":
             Calculator("hhhooooonnneyyyy", 1, "tbsp", 60, 0, 0, 0)
-
+        #eastereggs
+        elif foodinput == "mlg tacos":
+            Calculator("you is mlg pro", 360, "pro skillz", 360, 360, 360, 360)
         else:
             koop("can not recognize", True)
         
